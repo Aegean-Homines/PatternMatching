@@ -1,0 +1,7 @@
+Using brute-force find:
+BruteForceFind: pattern at position 8
+BruteForceFind: pattern at position 36
+Using FSM find:
+Found pattern a b a c  at 8-11
+Found pattern a b a c  at 36-39
+Pattern a b a c  found 2 times

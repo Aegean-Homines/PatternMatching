@@ -1,0 +1,33 @@
+Using brute-force find:
+BruteForceFind: pattern at position 10
+BruteForceFind: pattern at position 12
+BruteForceFind: pattern at position 14
+BruteForceFind: pattern at position 16
+BruteForceFind: pattern at position 18
+BruteForceFind: pattern at position 20
+BruteForceFind: pattern at position 22
+BruteForceFind: pattern at position 24
+BruteForceFind: pattern at position 26
+BruteForceFind: pattern at position 38
+Using FSM find:
+Found pattern at 14
+Found pattern a c a c a  at 10-14
+Found pattern at 16
+Found pattern a c a c a  at 12-16
+Found pattern at 18
+Found pattern a c a c a  at 14-18
+Found pattern at 20
+Found pattern a c a c a  at 16-20
+Found pattern at 22
+Found pattern a c a c a  at 18-22
+Found pattern at 24
+Found pattern a c a c a  at 20-24
+Found pattern at 26
+Found pattern a c a c a  at 22-26
+Found pattern at 28
+Found pattern a c a c a  at 24-28
+Found pattern at 30
+Found pattern a c a c a  at 26-30
+Found pattern at 42
+Found pattern a c a c a  at 38-42
+Pattern a c a c a  found 10 times
