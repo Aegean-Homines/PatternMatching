@@ -1,0 +1,4 @@
+Using brute-force find:
+BruteForceFind: pattern at position 4194304
+Using FSM find:
+Found pattern a c a c a  at 4194304-4194308

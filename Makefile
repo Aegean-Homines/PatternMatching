@@ -1,7 +1,9 @@
 GCC=g++
+PRG=gcc.exe
 GCCFLAGS=-Wall -Wextra -ansi -Wold-style-cast -Woverloaded-virtual -Wsign-promo  -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -pedantic -std=c++11
 GCCOPTIMIZE=-O3
 DRMEM_GCCFLAGS=-m32 -g -fno-inline -fno-omit-frame-pointer
+
 
 MSC=cl
 MSCFLAGS=                 /EHa      /MDd /W4 /Za /Zc:forScope /nologo /D_CRT_SECURE_NO_DEPRECATE
@@ -31,10 +33,10 @@ drmem:
 	$(GCC) -o $@.exe $(DRIVER0) $(OBJECTS0) $(DRMEM_GCCFLAGS)
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16:
 	echo "running test$@"
-	watchdog 200 ./$(PRG) $@ >studentout$@
+	./$(PRG) $@ >studentout$@
 	diff out$@ studentout$@ $(DIFF_OPTIONS) > difference$@
 mem0 mem1 mem2 mem3 mem4 mem5 mem6 mem7 mem8 mem9 mem10 mem11 mem12 mem13 mem14 mem15 mem16:
 	echo "running memory test $@"
-	watchdog 1000 valgrind $(VALGRIND_OPTIONS) ./$(PRG) $(subst mem,,$@) 1>/dev/null 2>difference$@
+	valgrind $(VALGRIND_OPTIONS) ./$(PRG) $(subst mem,,$@) 1>/dev/null 2>difference$@
 clean:
 	rm -f *.exe *.o *.obj *.tds *.exe.manifest

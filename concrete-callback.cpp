@@ -4,13 +4,13 @@
 #include "concrete-callback.h"
 
 namespace CS330 {
-	/*void ConcreteCallback1::OnFind ( size_t pos ) {
+	void ConcreteCallback1::OnFind ( size_t pos ) {
 		std::cout << "Found pattern at " << pos << std::endl;
 	}
 
 	void ConcreteCallback1::OnDone() {
 		std::cout << "------DONE---------" << std::endl;
-	}*/
+	}
 
 	template <typename Symbol>
 	ConcreteCallback2<Symbol>::ConcreteCallback2

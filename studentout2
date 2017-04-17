@@ -1,0 +1,5 @@
+Using brute-force find:
+BruteForceFind: pattern at position 2097150
+Using FSM find:
+Found pattern a b a c  at 2097150-2097153
+Pattern a b a c  found 1 times

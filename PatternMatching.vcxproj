@@ -158,6 +158,15 @@
     <ClCompile Include="fsmfind.cpp" />
     <ClCompile Include="state.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="handout.pdf" />
+    <None Include="out0" />
+    <None Include="out1" />
+    <None Include="out2" />
+    <None Include="out3" />
+    <None Include="out4" />
+    <None Include="out5" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -38,13 +38,16 @@ namespace CS330 {
 				bool IsTerminal() const;
 				////////////////////////////////////////////////////////////
 			private:
+				typedef std::map<Symbol, const State<Symbol>*> TransitionMap;
 				////////////////////////////////////////////////////////////
 				// used by PrintDebug
 				void Print(const std::vector<Symbol> & v) const;
+				State<Symbol>(const State<Symbol> &);
+				State<Symbol>& operator=(const State<Symbol>&);
 
 				std::vector<Symbol> name;   // human readable name of the state, use prefix itself
 				bool isTerminal;            // is the goal state?
-				std::map<Symbol,const State<Symbol>*> transitions;  //transitions for all symbols in the pattern
+				TransitionMap transitions;  //transitions for all symbols in the pattern
 				State<Symbol> const * p_default_state;
 		};
 

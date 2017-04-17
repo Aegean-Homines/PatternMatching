@@ -51,4 +51,27 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="handout.pdf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="out0">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="out1">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="out2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="out3">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="out4">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="out5">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

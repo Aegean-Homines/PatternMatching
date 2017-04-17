@@ -11,13 +11,8 @@ namespace CS330 {
     //both function just print a static message
     class ConcreteCallback1 : public AbstractCallback {
 		public:
-			void OnFind(size_t pos) {
-				std::cout << "Found pattern at " << pos << std::endl;
-			}
-			void OnDone() override{
-				std::cout << "------DONE---------" << std::endl;
-
-			}
+			void OnFind(size_t pos);
+			void OnDone();
 	};
 
     //a more useful implementation of AbstractCallback interface

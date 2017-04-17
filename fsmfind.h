@@ -3,6 +3,7 @@
 #include <vector>
 #include "abstract-callback.h"
 #include "state.h"
+#include <set>
 
 // this is a SAMPLE - driver only uses public API
 // You can change anything you want in the private section.
@@ -25,12 +26,13 @@ namespace CS330 {
 				std::vector<Symbol> 
 					substring(const std::vector<Symbol> & str, size_t pos, size_t length) const;
                 // preprocessing - called in the end of constructor
-				void CreateTransitions(size_t i,size_t j0);
+				void CreateTransitions();
 			private:
 				std::vector<Symbol> const      pattern;
 				std::vector<State<Symbol>*>    states;
 				std::vector<AbstractCallback*> vecOnFind;
 				std::vector<AbstractCallback*> vecOnDone;
+				std::set<Symbol>			   possibleInput;
 		};
 
 }
